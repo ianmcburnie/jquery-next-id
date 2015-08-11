@@ -1,0 +1,45 @@
+{
+  "name": "@ianmcburnie/jquery-next-id",
+  "description": "jQuery collection plugin that will assign the next ID in sequence if an ID property does not already exist.",
+  "version": "0.0.1",
+  "scripts": {
+    "browserifyTapeTest": "browserify test.tape.js > test.tape.browserify.js",
+    "coverifySrc": "browserify -t coverify jquery.nextid.js > jquery.nextid.coverify.js",
+    "tape": "npm run browserifyTapeTest && npm run coverifySrc && testling | coverify --json -o coverage.json",
+    "test": "node_modules/karma/bin/karma start",
+    "watch": "node_modules/karma/bin/karma start --no-single-run --auto-watch"
+  },
+  "author": "Ian McBurnie <ianmcburnie@hotmail.com>",
+  "homepage": "https://github.com/ianmcburnie/jquery-next-id",
+  "bugs": {
+    "url": "https://github.com/ianmcburnie/jquery-next-id/issues"
+  },
+  "keywords": [
+    "jquery-plugin",
+    "ecosystem:jquery"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ianmcburnie/jquery-next-id.git"
+  },
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "coverify": "*",
+    "jasmine-core": "^2.3.4",
+    "jquery": "1.11.2",
+    "karma": "^0.13.9",
+    "karma-coverage": "^0.5.0",
+    "karma-jasmine": "^0.3.6",
+    "karma-phantomjs-launcher": "^0.2.1",
+    "phantomjs": "^1.9.18",
+    "tape": "*",
+    "testling": "*"
+  },
+  "testling": {
+    "scripts": [
+      "node_modules/jquery/dist/jquery.min.js",
+      "jquery.nextid.coverify.js",
+      "test.tape.browserify.js"
+    ]
+  }
+}
