@@ -17,7 +17,7 @@ module.exports = function(config) {
     files: [
       'node_modules/jquery/dist/jquery.min.js',
       'jquery.nextid.js',
-      'test.jasmine.js'
+      'test.js'
     ],
 
 
