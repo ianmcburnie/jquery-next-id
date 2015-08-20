@@ -2,8 +2,6 @@
 
 jQuery collection plugin that will assign the next ID in sequence if an ID property does not already exist.
 
-## Usage
-
 ```js
 $(collection).nextId([prefix]);
 ```
@@ -51,3 +49,7 @@ Output:
 <p id="foo_0" />
 <p id="foo_1" />
 ```
+
+## Travis CI
+
+https://travis-ci.org/ianmcburnie/jquery-next-id
