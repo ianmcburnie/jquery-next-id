@@ -1,7 +1,7 @@
 {
   "name": "@ianmcburnie/jquery-next-id",
   "description": "jQuery collection plugin that will assign the next ID in sequence if an ID property does not already exist.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "lint": "node_modules/jshint/bin/jshint jquery.nextid.js > jshint.txt",
     "test": "node_modules/karma/bin/karma start",
