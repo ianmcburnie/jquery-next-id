@@ -25,6 +25,7 @@
   },
   "license": "ISC",
   "devDependencies": {
+    "coveralls": "^2.11.4",
     "jasmine-core": "^2.3.4",
     "jquery": "1.11.2",
     "jshint": "^2.8.0",
