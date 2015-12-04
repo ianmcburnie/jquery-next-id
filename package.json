@@ -1,12 +1,12 @@
 {
-  "name": "@ianmcburnie/jquery-next-id",
+  "name": "@ebay/jquery-next-id",
   "description": "jQuery collection plugin that will assign the next ID in sequence if an ID property does not already exist.",
-  "version": "0.0.2",
+  "version": "0.0.8",
   "scripts": {
     "lint": "node_modules/jshint/bin/jshint jquery.nextid.js > jshint.txt",
-    "test": "node_modules/karma/bin/karma start",
+    "test": "npm run lint && node_modules/karma/bin/karma start",
     "coverage": "npm test",
-    "build": "node_modules/jsmin/bin/jsmin -o jquery.nextid.min.js jquery.nextid.js",
+    "build": "npm test && node_modules/jsmin/bin/jsmin -o jquery.nextid.min.js jquery.nextid.js",
     "watch": "node_modules/karma/bin/karma start --no-single-run --auto-watch"
   },
   "author": "Ian McBurnie <ianmcburnie@hotmail.com>",
@@ -16,7 +16,8 @@
   },
   "keywords": [
     "jquery-plugin",
-    "ecosystem:jquery"
+    "ecosystem:jquery",
+    "ebay"
   ],
   "repository": {
     "type": "git",

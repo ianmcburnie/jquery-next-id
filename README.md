@@ -1,9 +1,21 @@
-# jquery-next-id
+# @ebay/jquery-next-id
 
 jQuery collection plugin that will assign the next ID in sequence if an ID property does not already exist.
 
 ```js
 $(collection).nextId([prefix]);
+```
+
+## Experimental
+
+This plugin is still in an experimental state, until it reaches v1.0.0 you must consider all minor releases as breaking changes. Patch releases may introduce new features, but will be backwards compatible.
+
+Please use the tilde range specifier in your package.json to pin to a fixed major and minor version.
+
+## Install
+
+```js
+npm install @ebay/jquery-next-id --save
 ```
 
 ## Defaults
@@ -22,21 +34,12 @@ Input:
 ```html
 <div />
 <div />
-<span />
-<span />
-<p />
-<p />
+```
 
-*/ with prefix */
+Execute:
+
+```js
 $('div').nextId('my-prefix');
-
-*/ without prefix */
-$('span').nextId();
-
-*/ overriding default prefix and separator */
-$.fn.nextId.defaults.prefix = 'foo';
-$.fn.nextId.defaults.separator = '_';
-$('p').nextId();
 ```
 
 Output:
@@ -44,10 +47,6 @@ Output:
 ```html
 <div id="my-prefix-0" />
 <div id="my-prefix-1" />
-<span id="nid-0" />
-<span id="nid-1" />
-<p id="foo_0" />
-<p id="foo_1" />
 ```
 
 ## Travis CI

@@ -1,6 +1,6 @@
 /**
 * @function jquery.nextid.js
-* @version 0.0.2
+* @version 0.0.8
 * @author Ian McBurnie <ianmcburnie@hotmail.com>
 * @desc jQuery collection plugin that will assign the next ID in sequence if an
 * ID property does not already exist.
