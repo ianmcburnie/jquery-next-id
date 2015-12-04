@@ -1,8 +1,8 @@
 # @ebay/jquery-next-id
 
 <p>
-    <a href="https://travis-ci.org/ianmcburnie/jquery-next-id"><img src="https://api.travis-ci.org/ianmcburnie/jquery-next-id.svg?branch=master" alt="Travis CI build status" /></a>
-    <a href="https://coveralls.io/github/ianmcburnie/jquery-next-id?branch=master"><img src="https://s3.amazonaws.com/assets.coveralls.io/badges/coveralls_unknown.svg" alt="Coveralls code coverage" /></a>
+    <a href="https://travis-ci.org/ianmcburnie/jquery-next-id"><img src="https://api.travis-ci.org/ianmcburnie/jquery-next-id.svg?branch=master" alt="Build Status" /></a>
+    <a href="https://coveralls.io/github/ianmcburnie/jquery-next-id?branch=master"><img src="https://coveralls.io/repos/ianmcburnie/jquery-next-id/badge.svg?branch=master&service=github" alt="Coverage Status" /></a>
 </p>
 
 jQuery collection plugin that will assign the next ID in sequence if an ID property does not already exist.
@@ -54,6 +54,10 @@ Output:
 <div id="my-prefix-1" />
 ```
 
-## Travis CI
+## CI Build
 
 https://travis-ci.org/ianmcburnie/jquery-next-id
+
+## Code Coverage
+
+https://coveralls.io/github/ianmcburnie/jquery-next-id?branch=master
