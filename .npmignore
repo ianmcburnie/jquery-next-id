@@ -2,3 +2,7 @@
 .travis.yml
 karma.conf.js
 test.js
+coverage
+karma_html
+target
+jshint.txt
