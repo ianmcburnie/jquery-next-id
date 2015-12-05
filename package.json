@@ -1,7 +1,7 @@
 {
   "name": "@ebay/jquery-next-id",
   "description": "jQuery collection plugin that will assign the next ID in sequence if an ID property does not already exist.",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "scripts": {
     "start": "nodemon -e js -x 'npm test' --ignore coverage -s",
     "test": "npm run lint && karma start",
