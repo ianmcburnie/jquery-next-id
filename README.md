@@ -54,6 +54,27 @@ Output:
 <div id="my-prefix-1" />
 ```
 
+## Development
+
+Run `npm start` for test driven development. All tests are located in `test.js`.
+
+Execute `npm run` to view all available CLI scripts:
+
+* `npm start` watches code and re-lints and re-tests after any change
+* `npm test` lints code, runs all unit tests & generates reports (see reports section below)
+* `npm run lint` lints code and reports to stdout
+* `npm run minify` builds minified version of plugin
+* `npm run clean` deletes all generated test reports and coverage files
+
+## Reports
+
+Each test run will generate the following reports:
+
+* `jshint.txt` contains JSHint checkstyle report
+* `/coverage` contains Istanbul code coverage report
+* `/karma_html` contains HTML test report
+* `/target` contains JUnit test report
+
 ## CI Build
 
 https://travis-ci.org/ianmcburnie/jquery-next-id

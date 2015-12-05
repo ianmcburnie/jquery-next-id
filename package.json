@@ -3,11 +3,12 @@
   "description": "jQuery collection plugin that will assign the next ID in sequence if an ID property does not already exist.",
   "version": "0.0.8",
   "scripts": {
-    "lint": "node_modules/jshint/bin/jshint jquery.nextid.js > jshint.txt",
-    "test": "npm run lint && node_modules/karma/bin/karma start",
-    "coverage": "npm test",
-    "build": "npm test && node_modules/jsmin/bin/jsmin -o jquery.nextid.min.js jquery.nextid.js",
-    "watch": "node_modules/karma/bin/karma start --no-single-run --auto-watch"
+    "start": "nodemon -e js -x 'npm test' --ignore coverage -s",
+    "test": "npm run lint && karma start",
+    "prepublish": "npm run minify",
+    "lint": "jshint jquery.nextid.js > jshint.txt",
+    "minify": "npm test && jsmin -o jquery.nextid.min.js jquery.nextid.js",
+    "clean": "rimraf coverage target karma_html jshint.txt"
   },
   "author": "Ian McBurnie <ianmcburnie@hotmail.com>",
   "homepage": "https://github.com/ianmcburnie/jquery-next-id",
@@ -36,6 +37,8 @@
     "karma-jasmine": "^0.3.6",
     "karma-junit-reporter": "^0.3.3",
     "karma-phantomjs-launcher": "^0.2.1",
-    "phantomjs": "^1.9.18"
+    "nodemon": "^1.8.1",
+    "phantomjs": "^1.9.18",
+    "rimraf": "^2.4.4"
   }
 }
