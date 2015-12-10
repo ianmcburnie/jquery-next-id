@@ -56,7 +56,7 @@ Output:
 
 ## Development
 
-Run `npm start` for test driven development. All tests are located in `test/test.js`.
+Run `npm start` for test driven development. All tests are located in `test.js`.
 
 Execute `npm run` to view all available CLI scripts:
 
