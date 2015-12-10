@@ -1,8 +1,7 @@
 .npmignore
 .travis.yml
+.jshintrc
 karma.conf.js
-test.js
-coverage
-karma_html
-target
 jshint.txt
+test.js
+test_reports

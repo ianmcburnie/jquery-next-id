@@ -23,6 +23,8 @@ Please use the tilde range specifier in your package.json to pin to a fixed majo
 npm install @ebay/jquery-next-id --save
 ```
 
+The NPM package also includes a minified version of the plugin.
+
 ## Defaults
 
 ```js
@@ -37,8 +39,7 @@ $.fn.nextId.defaults = {
 Input:
 
 ```html
-<div />
-<div />
+<div /><div />
 ```
 
 Execute:
@@ -50,30 +51,29 @@ $('div').nextId('my-prefix');
 Output:
 
 ```html
-<div id="my-prefix-0" />
-<div id="my-prefix-1" />
+<div id="my-prefix-0" /><div id="my-prefix-1" />
 ```
 
 ## Development
 
-Run `npm start` for test driven development. All tests are located in `test.js`.
+Run `npm start` for test driven development. All tests are located in `test/test.js`.
 
 Execute `npm run` to view all available CLI scripts:
 
-* `npm start` watches code and re-lints and re-tests after any change
-* `npm test` lints code, runs all unit tests & generates reports (see reports section below)
-* `npm run lint` lints code and reports to stdout
-* `npm run minify` builds minified version of plugin
+* `npm start` test driven development: watches code and re-tests after any change
+* `npm test` runs tests & generates reports (see reports section below)
+* `npm run lint` lints code and reports to jshint.txt
+* `npm run minify` builds minified version of code
+* `npm run build` cleans, lints, tests and minifies (called on `npm prepublish` hook)
 * `npm run clean` deletes all generated test reports and coverage files
 
 ## Reports
 
 Each test run will generate the following reports:
 
-* `jshint.txt` contains JSHint checkstyle report
-* `/coverage` contains Istanbul code coverage report
-* `/karma_html` contains HTML test report
-* `/target` contains JUnit test report
+* `/test_reports/coverage` contains Istanbul code coverage report
+* `/test_reports/html` contains HTML test report
+* `/test_reports/junit` contains JUnit test report
 
 ## CI Build
 
