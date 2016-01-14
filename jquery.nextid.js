@@ -1,7 +1,7 @@
 /**
 * @name jquery-next-id
 * @function $.fn.nextId
-* @version 0.0.11
+* @version 0.0.12
 * @author Ian McBurnie <ianmcburnie@hotmail.com>
 * @desc jQuery collection plugin that will assign the next id in sequence if an
 * id property does not already exist.
