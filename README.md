@@ -1,4 +1,4 @@
-# @ebay/jquery-next-id
+# jquery-next-id
 
 <p>
     <a href="https://travis-ci.org/ianmcburnie/jquery-next-id"><img src="https://api.travis-ci.org/ianmcburnie/jquery-next-id.svg?branch=master" alt="Build Status" /></a>
@@ -20,7 +20,7 @@ This plugin is still in an experimental state, until it reaches v1.0.0 you must 
 ## Install
 
 ```js
-npm install @ebay/jquery-next-id
+npm install jquery-next-id
 ```
 
 ## Defaults
