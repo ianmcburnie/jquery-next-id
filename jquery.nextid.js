@@ -1,15 +1,19 @@
 /**
-* @name jquery-next-id
-* @function $.fn.nextId
-* @version 0.0.16
+* @file jQuery collection plugin that will assign the next id in sequence if an id property does not already exist.
 * @author Ian McBurnie <ianmcburnie@hotmail.com>
-* @desc jQuery collection plugin that will assign the next id in sequence if an
-* id property does not already exist.
-* @param {string} prefix The id will be prefixed with this value (default: nid)
+* @version 0.1.0
+* @requires jquery
 */
-(function ($, window, document, undefined) {
+(function($, window, document, undefined) {
     var _nextInSequenceMap = {};
 
+    /**
+    * jQuery collection plugin that will assign the next id in sequence if an id property does not already exist.
+    *
+    * @method "jQuery.fn.nextId"
+    * @param {string} prefix The id will be prefixed with this value (default: nid)
+    * @return {jQuery} chainable jQuery class
+    */
     $.fn.nextId = function nextId(prefix) {
         prefix = prefix || $.fn.nextId.defaults.prefix;
 
@@ -23,10 +27,15 @@
             $(this).prop('id', prefix + $.fn.nextId.defaults.separator + _nextInSequenceMap[prefix]++);
         });
     };
-
 }(jQuery, window, document));
 
 $.fn.nextId.defaults = {
     prefix: 'nid',
     separator: '-'
 };
+
+/**
+* The jQuery plugin namespace.
+* @external "jQuery.fn"
+* @see {@link http://learn.jquery.com/plugins/|jQuery Plugins}
+*/
