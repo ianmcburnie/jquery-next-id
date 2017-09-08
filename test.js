@@ -1,11 +1,12 @@
-describe("jquery.nextid.js", function() {
+/* eslint no-undef: 0 */
 
+describe("jquery.nextid.js", function() {
     beforeEach(function() {
         $('body').empty();
         $('body').append('<div>').append('<div>');
     });
 
-    it("should work with given prefix", function(){
+    it("should work with given prefix", function() {
         // execute
         $('div').nextId('my-prefix');
         // assert
@@ -13,7 +14,7 @@ describe("jquery.nextid.js", function() {
         expect($('div').last().prop('id')).toBe('my-prefix-1');
     });
 
-    it("should work without given prefix", function(){
+    it("should work without given prefix", function() {
         // execute
         $('div').nextId();
         // assert
@@ -21,7 +22,7 @@ describe("jquery.nextid.js", function() {
         expect($('div').last().prop('id')).toBe('nid-1');
     });
 
-    it("should work with new defaults", function(){
+    it("should work with new defaults", function() {
         // execute
         $.fn.nextId.defaults.prefix = 'foo';
         $.fn.nextId.defaults.separator = '_';
