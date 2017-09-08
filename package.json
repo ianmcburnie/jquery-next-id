@@ -34,11 +34,11 @@
   "devDependencies": {
     "coveralls": "^2",
     "eslint": "^4",
-    "eslint-config-google": "~0.9",
+    "eslint-config-ebay": "~0.1",
     "jasmine-core": "^2",
+    "jquery": ">=1.11",
     "jsdoc": "^3",
     "jsmin": "^1",
-    "jquery": ">=1.11",
     "karma": "^1",
     "karma-coverage": "^1",
     "karma-html-reporter": "~0.2",
