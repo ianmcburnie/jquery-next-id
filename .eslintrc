@@ -5,8 +5,10 @@
         "jquery": true
     },
     "rules": {
+        "comma-dangle": 0,
         "indent": [2, 4, { "SwitchCase": 1 }],
         "wrap-iife": [2, "any"],
+        "no-var": 0,
         "no-unused-vars": 0,
         "no-shadow-restricted-names": 0,
         "max-len": 0,

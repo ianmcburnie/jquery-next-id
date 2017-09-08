@@ -22,8 +22,7 @@
 
         return this.filter(function onFilter() {
             return !this.id;
-        })
-        .each(function onEach() {
+        }).each(function onEach() {
             $(this).prop('id', prefix + $.fn.nextId.defaults.separator + _nextInSequenceMap[prefix]++);
         });
     };
