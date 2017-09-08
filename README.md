@@ -13,24 +13,11 @@ jQuery collection plugin that will assign the next ID in sequence if an ID prope
 $(collection).nextId([prefix]);
 ```
 
-## Experimental
-
-This plugin is still in an experimental state, until it reaches v1.0.0 you must consider all minor releases as breaking changes. Patch releases may introduce new features, but will be backwards compatible.
-
 ## Install
-
-<strike>
-```
-npm install @ebay/jquery-next-id
-```
-</strike>
 
 ```js
 npm install jquery-next-id
 ```
-
-**NOTE: The @ebay package scope is no longer supported. In order to receive latest NPM updates, please use the non-scoped version of this package.**
-
 ## Defaults
 
 ```js
