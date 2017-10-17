@@ -1,10 +1,10 @@
 # jquery-next-id
 
 <p>
-    <a href="https://travis-ci.org/ianmcburnie/jquery-next-id"><img src="https://api.travis-ci.org/ianmcburnie/jquery-next-id.svg?branch=master" alt="Build Status" /></a>
-    <a href='https://coveralls.io/github/ianmcburnie/jquery-next-id?branch=master'><img src='https://coveralls.io/repos/ianmcburnie/jquery-next-id/badge.svg?branch=master&service=github' alt='Coverage Status' /></a>
-    <a href="https://david-dm.org/ianmcburnie/jquery-next-id"><img src="https://david-dm.org/ianmcburnie/jquery-next-id.svg" alt="Dependency status" /></a>
-    <a href="https://david-dm.org/ianmcburnie/jquery-next-id#info=devDependencies"><img src="https://david-dm.org/ianmcburnie/jquery-next-id/dev-status.svg" alt="devDependency status" /></a>
+    <a href="https://travis-ci.org/makeup-jquery/jquery-next-id"><img src="https://api.travis-ci.org/makeup-jquery/jquery-next-id.svg?branch=master" alt="Build Status" /></a>
+    <a href='https://coveralls.io/github/makeup-jquery/jquery-next-id?branch=master'><img src='https://coveralls.io/repos/makeup-jquery/jquery-next-id/badge.svg?branch=master&service=github' alt='Coverage Status' /></a>
+    <a href="https://david-dm.org/makeup-jquery/jquery-next-id"><img src="https://david-dm.org/makeup-jquery/jquery-next-id.svg" alt="Dependency status" /></a>
+    <a href="https://david-dm.org/makeup-jquery/jquery-next-id#info=devDependencies"><img src="https://david-dm.org/makeup-jquery/jquery-next-id/dev-status.svg" alt="devDependency status" /></a>
 </p>
 
 jQuery collection plugin that will assign the next ID in sequence if an ID property does not already exist.
@@ -70,8 +70,8 @@ Each test run will generate the following reports:
 
 ## CI Build
 
-https://travis-ci.org/ianmcburnie/jquery-next-id
+https://travis-ci.org/makeup-jquery/jquery-next-id
 
 ## Code Coverage
 
-https://coveralls.io/github/ianmcburnie/jquery-next-id?branch=master
+https://coveralls.io/github/makeup-jquery/jquery-next-id?branch=master

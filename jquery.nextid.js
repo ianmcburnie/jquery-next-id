@@ -1,10 +1,10 @@
 /**
 * @file jQuery collection plugin that will assign the next id in sequence if an id property does not already exist.
 * @author Ian McBurnie <ianmcburnie@hotmail.com>
-* @version 1.0.0
+* @version 1.0.1
 * @requires jquery
 */
-(function($, window, document, undefined) {
+(function($, window, document, undefined) { // eslint-disable-line no-unused-vars
     var _nextInSequenceMap = {};
 
     /**
